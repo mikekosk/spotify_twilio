@@ -1,0 +1,6 @@
+<h1>Top Artists</h1>
+<% spotify_user = RSpotify::User.new(@hash) %>
+<% top_artists = spotify_user.top_artists %>
+<%= top_artists.first.name %>
+top_artists.size       #=> 20
+top_artists.first.name #=> "Nine Inch Nails"
