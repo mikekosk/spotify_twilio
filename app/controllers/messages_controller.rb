@@ -10,16 +10,8 @@ class MessagesController < ApplicationController
     puts "hello"
     puts session[:foo]
     puts session[:hash]
+    byebug
     puts session
-    
-    # spotify_user = RSpotify::User.new(@hash)
-    # puts spotify_user
-    
-    # tracks = RSpotify::Track.search(message_body)
-    # puts tracks 
-    
-    # playlist = spotify_user.create_playlist!('Spotify + Twilio')
-    # playlist.add_tracks!(tracks)
     
     @client.messages
       .create({

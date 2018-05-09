@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @hash = spotify_user.to_hash
     
     session[:foo] = '12345'
+    byebug
     puts session[:foo]
+    
     
     session[:hash] = @hash
     puts session[:hash]
