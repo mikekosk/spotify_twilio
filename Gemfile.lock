@@ -55,6 +55,10 @@ GEM
     crass (1.0.4)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.4.0)
+    dotenv-rails (2.4.0)
+      dotenv (= 2.4.0)
+      railties (>= 3.2, < 6.0)
     erubi (1.7.1)
     execjs (2.7.0)
     faraday (0.12.2)
@@ -213,6 +217,10 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.1.0)
+    twilio-ruby (5.9.0)
+      faraday (~> 0.9)
+      jwt (>= 1.5, <= 2.5)
+      nokogiri (>= 1.6, < 2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -235,6 +243,7 @@ PLATFORMS
 DEPENDENCIES
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
+  dotenv-rails
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.7.0)
@@ -252,6 +261,7 @@ DEPENDENCIES
   spring-watcher-listen (= 2.0.1)
   sqlite3 (= 1.3.13)
   turbolinks (= 5.0.1)
+  twilio-ruby
   tzinfo-data
   uglifier (= 3.2.0)
   web-console (= 3.5.1)

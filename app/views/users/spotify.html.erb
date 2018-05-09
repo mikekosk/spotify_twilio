@@ -1,6 +1,10 @@
 <h1>Top Artists</h1>
 <% spotify_user = RSpotify::User.new(@hash) %>
-<% top_artists = spotify_user.top_artists %>
-<%= top_artists.first.name %>
-top_artists.size       #=> 20
-top_artists.first.name #=> "Nine Inch Nails"
+<%= spotify_user.email %>
+<h2> TOP TRACKS </h2>
+<% spotify_user.top_tracks.each_with_index do |t, i| %>
+  <li><%= "#{i + 1}. #{t.name}" %></li>
+<% end %>
+<% spotify_user.playlists.each do |k| %>
+  <li><%= "#{k.name}" %></li>
+<% end %>
